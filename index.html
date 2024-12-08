@@ -5,54 +5,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2023년 버킷리스트</title>
+    <title>2025 Resolutions</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap');
+
         * {
-            font-family: 'IBM Plex Sans KR', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
         }
+
+        body {
+            background-color: #F4F4F9; /* Off-white background */
+            color: #2E2E2E; /* Dark gray for text */
+            text-align: center;
+            padding: 40px 20px;
+        }
+
         .title {
-            color: white;
-            background-color: tomato;
-            font-size: 24px;
-            padding: 4px 14px;
-            border-radius: 8px;
+            font-size: 40px;
+            font-weight: 700;
+            color: #2E2E2E;
+            margin-bottom: 24px;
         }
-        .bg {
-            width: 360px;
-            background-image : url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-grid.png");
-        }
+
         .msg {
-            font-weight: bold;
+            font-size: 18px;
+            font-weight: 500;
+            color: #7D8F9B; /* Cool Slate Blue */
+            margin-bottom: 32px;
         }
+        
+        .row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+
         .bucket {
-            width: 160px;
-            height: 160px;
+            width: 180px;
+            height: 180px;
+            background-color: #B9C0DA; /* Muted Lavender */
+            color: #2E2E2E;
+            font-size: 18px;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 16px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            cursor: pointer;
         }
-        .img1 {
-            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-red.png");
-            background-size: cover;
-            background-position: center;
+
+        .bucket-alt {
+            background-color: #7D8F9B; /* Cool Slate Blue */
         }
-        .img2 {
-            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-lightred.png");
-            background-size: cover;
-            background-position: center;
+
+        .bucket:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .bucket {
+                width: 150px;
+                height: 150px;
+            }
+
+            .title {
+                font-size: 28px;
+            }
+
+            .msg {
+                font-size: 16px;
+            }
         }
     </style>
-    <link rel="stylesheet" type="text/css" href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/sparta-bucket2.css">
 </head>
 
-<body class="bg center">
-    <h1 class="title">2023 Resolutions</h1>
-    <p class="msg"> Love, dilligence, and kindness </p>
-    <div class="row flex-row wrap">
-        <div class="bucket img1 center">Get French C1</div>
-        <div class="bucket img2 center">Translate Italian</div>
-        <div class="bucket img2 center">Read the Bible everyday</div>
-        <div class="bucket img1 center">Learn Python</div>
-        <div class="bucket img1 center">Get 20 certificates</div>
-        <div class="bucket img2 center">Read 200 books</div>
+<body>
+
+    <!-- Title -->
+    <h1 class="title">2025 Resolutions</h1>
+
+    <p class="project-msg">This project showcases my HTML/CSS skills, including responsive design, animations, and clean, modern UI elements.</p>
+
+    <!-- Tagline -->
+    <p class="msg">"Refinement, Creativity, and Exploration"</p>
+
+    <!-- Resolutions -->
+    <div class="row">
+        <div class="bucket">📜 Get French C1 Certificate</div>
+        <div class="bucket bucket-alt">📷 Take More Photos</div>
+        <div class="bucket">📚 Read Meaningful Books</div>
+        <div class="bucket bucket-alt">✍️ Write More</div>
+        <div class="bucket">🎉 Try 5 New Things</div>
     </div>
 
 </body>
